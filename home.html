@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+
+</head>
+ <!-- ************** Bootstrap CDN Link *************** -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- ************** FontAwesome Icons CDN Link *************** -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- *********** Custom Style CDN Link ****************** -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="./app.js"></script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Team Reporter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <h1>hello </h1>: &nbsp;<h2><script>document.write(localStorage.getItem('name'))</script></h2>
+        
+          <form class="form-inline my- my-lg-0">
+            
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="logout()">logout</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="team-sect">
+        <h3 class="text-center"><span class="teams-heading"> Teams You Own</span></h3>
+        <div class="teams-cards-cont container">
+
+            <div id="teams-you-own"  class="row">
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ADD TEAM</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="team-name" class="col-form-label">Team Name:</label>
+                        <input type="text" class="form-control" id="team-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="team-category" class="col-form-label">Team Category:</label>
+                        <select id="team-category" class="form-select" aria-label="Default select example">
+                            <option selected value="category">Category</option>
+                            <option value="Testing Team">Testing Team</option>
+                            <option value="Development team">Development team</option>
+                            <option value="Marketing team">Marketing team</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="team-modal-close" type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Close</button>
+                <button onclick="handleSaveTeam()" type="button" class="btn btn-primary">Save
+                    changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="float">
+<i class="fa fa-plus my-float"></i>
+</a>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <!-- ************ Alert Sweet CDN Link ***************** -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- ************ Bootstrap CDN Link ***************** -->
+  <script type="module" src="../bootstrap/bootstrap.bundle.js"></script>
+
+ 
+</body>
+
+</html>
